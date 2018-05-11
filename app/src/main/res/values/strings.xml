@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">OpenDex</string>
+
+    <string name="activity_main_title">Pokemon List</string>
+    <string name="activity_main_model_content_description">The image for the Pokemon</string>
+
+    <string name="activity_detail_transition_name">detail_model_transition</string>
+    <string name="activity_detail_abort_message">Pokemon data not found.</string>
+    <string name="activity_detail_header_content_description">The image for the Pokemon</string>
+    <string name="activity_detail_front_sprite_content_description">The front sprite for the Pokemon</string>
+    <string name="activity_detail_back_sprite_content_description">The back sprite for the Pokemon</string>
+    <string name="activity_detail_sprites_header">Sprites</string>
+    <string name="activity_detail_type_header">Type</string>
+    <string name="activity_detail_height_header">Height</string>
+    <string name="activity_detail_weight_header">Weight</string>
+    <string name="activity_detail_pokedex_entries_header">Pokedex Entries</string>
+    <string name="activity_detail_load_flavor_btn">Pokedex Entries</string>
+    <string name="activity_detail_abilities_header">Abilities</string>
+    <string name="activity_detail_hp_header">HP</string>
+    <string name="activity_detail_atk_header">ATK</string>
+    <string name="activity_detail_def_header">DEF</string>
+    <string name="activity_detail_spatk_header">SP ATK</string>
+    <string name="activity_detail_spdef_header">SP DEF</string>
+    <string name="activity_detail_speed_header">SPEED</string>
+
+</resources>

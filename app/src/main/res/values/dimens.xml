@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="image_width">164dp</dimen>
+    <dimen name="image_final_width">56dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+</resources>

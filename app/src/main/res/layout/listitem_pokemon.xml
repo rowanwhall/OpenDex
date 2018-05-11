@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="personal.rowan.sandbox.ui.main.MainViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/listitem_pokemon_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/textColorPrimaryLight"
+            android:text="@{viewModel.formattedNumber}"
+            android:gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            tools:text="#001"/>
+
+        <TextView
+            android:id="@+id/listitem_pokemon_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/textColorPrimary"
+            android:text="@{viewModel.formattedName}"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/listitem_pokemon_number_tv"
+            android:layout_toStartOf="@+id/listitem_pokemon_model_iv"
+            tools:text="Bulbasaur"/>
+
+        <ImageView
+            android:id="@+id/listitem_pokemon_model_iv"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/activity_main_model_content_description"
+            android:transitionName="@string/activity_detail_transition_name"
+            app:imageUrl="@{viewModel.modelUrl}"/>
+
+    </RelativeLayout>
+
+</layout>
